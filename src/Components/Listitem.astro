@@ -1,0 +1,39 @@
+---
+interface Props {
+  Headline: string; 
+  UnderText: string;
+}
+
+const { Headline, UnderText  } = Astro.props;
+---
+
+<div class="Listitem">
+  
+  <div class="Headline">
+    {Headline}
+  </div>
+
+  <div class="UnderText">
+    {UnderText}
+  </div>
+
+</div>
+
+<style>
+
+  .Listitem{
+    margin-left:40px;
+    padding-bottom:50px;
+  }
+
+  .Headline{
+    font-size:45px;
+  }
+
+  .UnderText{
+    font-size: 30px;
+    margin-left:50px;
+    padding-bottom:40px
+}
+
+</style>

@@ -1,0 +1,583 @@
+
+/* LISTEN */
+
+/* Folie 1*/
+
+.Aufzaehlungen{
+  margin-top: 150px;
+}
+
+.Aufzaehlungen ul{
+  padding-bottom: 20px;
+}
+
+.ListeF1{
+  font-size: 45px;
+}
+
+ul li::before{
+  content: url(../Image/arrow.png);
+  padding-bottom: 20px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+p{
+  font-size: 30px;
+  margin-left:50px;
+}
+
+.Text{
+  margin-top: 190px;
+}
+
+
+/* LISTEN */
+
+
+
+/* BORDER */
+
+.f1border1{
+  border-top: 2px solid white;
+    width: 30%;
+}
+
+.f1border2{
+  border-top: 2px solid white;
+    width: 55%;
+}
+
+.F2border1{
+  border-top: 2px solid white;
+  width: 30%;
+}
+
+.F2border2{
+  border-bottom: 2px solid white;
+  width: 55%;
+}
+
+.F2border3{
+  border-top: 2px solid white;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.F2border4{
+  border-bottom: 2px solid white;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.F3border1{
+  border-top: 2px solid white;
+  width: 30%;
+}
+
+.F3border2{
+  border-bottom: 2px solid white;
+  width: 55%;
+}
+
+.F3border3{
+  border-top: 2px solid white;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.F3border4{
+  border-bottom: 2px solid white;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.F4border1{
+  border-top: 2px solid white;
+  width: 30%;
+}
+
+.F4border2{
+  border-bottom: 2px solid white;
+  width: 55%;
+}
+
+.F4border3{
+  border-top: 2px solid white;
+  margin-left: 35px;
+  width: 90%;
+}
+
+.F4border4{
+  border-top: 2px solid white;
+  margin-left: 35px;
+  width: 90%;
+}
+
+.F5border1{
+  border-top: 2px solid white;
+  width: 30%;
+}
+
+.F5border2{
+  border-bottom: 2px solid white;
+  width: 45%;
+}
+
+.F6border1{
+  border-top: 2px solid white;
+    width: 30%;
+}
+
+.F6border2{
+  border-top: 2px solid white;
+    width: 55%;
+}
+
+.F6border3{
+  border-top: 2px solid white;
+  width: 1010px;
+  margin-left: 125px;
+  padding: 2px;
+}
+
+.F6border4{
+  border-bottom: 2px solid white;
+  width: 1010px;
+  margin-left: 125px;
+  padding: 2px;
+}
+
+/* BORDER */
+
+
+/* BUTTONS */
+
+.ButtonFeldLeft {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.ButtonLeft {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    margin-top: 470px;
+    border-radius: 5px;
+}
+
+.ButtonFeldLeftIndex {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+.ButtonLeftIndex {
+  width: 100px;
+  height: 50px;
+
+  margin-top: 470px;
+}
+
+.ButtonLeft:hover {
+    background: linear-gradient(to left bottom,turquoise , lightblue, white);
+}
+
+.ButtonFeldRight {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonRight {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    margin-top: 470px;
+    border-radius: 5px;
+}
+
+.ButtonRight:hover {
+    background: linear-gradient(to left bottom,turquoise , lightblue, white);
+    font-weight: bold;
+}
+
+
+/* BUTTONS */
+
+
+/* Links */
+
+/* Folie 1*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+
+
+/* Animation */
+.animation{
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: nowrap;
+  animation: 
+    typing 4s steps(200, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.animation{
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: nowrap;
+  animation: 
+    typing 4s steps(200, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+.typed2 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(300) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Animation */
+
+
+/*  LAYOUT DIVS */
+.TextDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.TextDivF5{
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+}
+
+.TextDivF6{
+  display: flex;
+  margin-top: 300px;
+  flex-direction: column;
+}
+
+.InhaltTextDivF6{
+  font-family: 'Bungee';
+  font-size: 40px;
+  text-align: center;
+}
+
+.MainDiv2{
+  height: 920px;
+  width: 1280px;
+  display: flex;
+}
+
+  
+.MainDiv{
+  height: 99%;
+  width: 99%;
+  display: flex;
+}
+
+.InhaltsverzeichnisDiv{
+  width: 100%;
+  height: 100%;
+}
+
+.FotoDivF2{
+  margin-top: 90px;
+  margin-left: 10px;
+  height: 700px;
+  width: 400px;
+}
+
+.FotoDivF3{
+  margin-top: 50px;
+  margin-left: 10px;
+  height: 700px;
+  width: 400px;
+}
+
+.FotoDivF4{
+  margin-top: 90px;
+  margin-left: 10px;
+  height: 700px;
+  width: 400px;
+}
+
+.MainText{
+  max-width: 980px;
+}
+
+.HauptText{
+  margin-top: 45px;
+  width: 570px;
+  height: 800px;
+  font-size: 25px;
+}
+
+/*  LAYOUT DIVS */
+
+
+/* Überschriften */
+h3 {
+  font-family: 'Bungee';
+} 
+
+.HeadlineF1{
+  margin-left: 35px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.HeadlineF2{
+  padding-left: 35px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.HeadlineF3{
+  padding-left: 35px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.HeadlineF4{
+  padding-top: 20px;
+  padding-left: 35px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.HeadlineF5{
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.HeadlineF6{
+  margin-left: 35px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+/* Überschriften */
+
+
+
+
+
+
+/* Folie 2 */
+
+.FirmenStandort{
+  margin-top: 3px;
+  margin-left: 40px;
+  margin-bottom: 3px;
+}
+
+
+.BildAbstand{
+margin-bottom: 20px;
+margin-top: 30px;
+margin-left: 50px;
+}
+
+.AllePunkte{
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.Point1{
+  margin-left: 20px;
+  padding-top: 3px;
+  font-size: 27px;
+}
+
+.F2Abstand{
+  margin-bottom: 20px;
+}
+
+.UberPunkt{
+  font-size: 32px;
+}
+
+.AdresseUnternehmen{
+  font-size: 27px;
+}
+
+/* Folie 2 */
+
+
+/* Folie 3*/
+
+.TitleF3{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.ListeInhalt{
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.InhaltListeF3{
+  margin-left: 30px;
+  font-size: 27px;
+}
+
+.AbstandListeF3{
+  padding-bottom: 20px;
+}
+
+
+.BildAbstandF3{
+  margin-top: 50px;
+}
+
+.FotoDivBilder{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+  }
+
+
+.Bild1 {
+    margin: 10px;
+}
+
+.Bild2 {
+    margin: 50px 10px 10px;
+}
+
+.Bild3 {
+    margin: 10px;
+}
+
+.Bild4 {
+    margin: 10px;
+}
+
+.Bild5 {
+    margin: 10px;
+}
+
+.Bild6 {
+    margin: 10px;
+}
+
+/* Folie 3*/
+
+
+/* Folie 4*/
+
+.TitleF4{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.InhaltListeF4{
+margin-left: 20px;
+font-size: 23px;
+}
+
+.TextF4{
+  margin-top: 195px;
+  font-size: 20px;
+}
+
+.ÜberschriftListe{
+  font-weight: bold;
+}
+
+/* Folie 4*/
+
+
+
+/* Folie5 */
+.Text1{
+  margin-top: 50px;
+  width: 490px;
+  height: 490px;
+}
+
+.TextInhalt2F5{
+  margin-left: 20px;
+}
+
+.TextF5{
+  margin-left: 20px;
+}
+
+h4{
+  font-size: 32px;
+  text-align: center;
+}
+
+.Text2{
+  margin-top: 50px;
+  margin-left: 10px;
+  height: 490px;
+  width: 490px;
+}
+
+.t1{
+  padding: 10px;
+}
+
+.TextInhalt{
+  margin-left: 20px;
+  font-size: 30px;
+}
+/* Folie5 */
+
+
+/* Folie 6 */
+.TextDivNeuF6{
+  height: 100%;
+  width: 900px;
+}
+
+.TextNeuF6{
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Folie 7*/
+.UnterTextF6{
+  text-align: center;
+  font-family: 'Bungee';
+  font-size: 25px;
+  margin-top: 10px;
+}

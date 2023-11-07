@@ -1,0 +1,86 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import { Image } from 'astro:assets';
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import GitBild from '../Image/git.svg';
+import HtmlBild from '../Image/html.svg';
+import CssBild from '../Image/css.svg';
+import GimpBild from '../Image/gimp.svg';
+import IcBild from '../Image/InternetComputer.svg';
+import AstroBild from '../Image/astro.svg';
+import Headline from '../Components/Headline.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+import ButtonRight from '../Components/ButtonRight.astro';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+<MainLayout title="Inhalt des Praktikums 1/2">
+
+  <div class="MainDiv2">
+    <ButtonLeft url="/f2" />
+
+    <div class="MainText">
+      <Headline class1="HeadlineF3" class2="F3border1" class3="typed2" 
+        Titel={lang.f3.headline} class4="F3border2" />
+
+      <div class="TextDiv">
+        <div class="HauptText">
+          <div class="Text">
+            <div class="F3border3"></div>
+
+            <div class="ListeInhalt">
+              <div class="AbstandListeF3">
+                <div class="TitleF3">{lang.f3.point1}</div>
+                <div class="InhaltListeF3">{lang.f3.text1}</div>
+              </div>
+              <div class="AbstandListeF3">
+                <div class="TitleF3">{lang.f3.point2}</div>
+                <div class="InhaltListeF3">{lang.f3.text2}</div>
+              </div>
+              <div class="AbstandListeF3">
+                <div class="TitleF3">{lang.f3.point3}</div>
+                <div class="InhaltListeF3">{lang.f3.text3}</div>
+                <div class="InhaltListeF3">{lang.f3.text4}</div>
+              </div>
+              <div class="AbstandListeF3">
+                <div class="TitleF3">{lang.f3.point4}</div>
+                <div class="InhaltListeF3">{lang.f3.text5}</div>
+                <div class="InhaltListeF3">{lang.f3.text6}</div>
+              </div>
+              <div class="AbstandListeF3">
+                <div class="TitleF3">{lang.f3.point5}</div>
+                <div class="InhaltListeF3">{lang.f3.text7}</div>
+                <div class="InhaltListeF3">{lang.f3.text8}</div>
+              </div>
+            </div>
+
+            <div class="F3border4"></div>
+          </div>
+        </div>
+
+        <div class="FotoDivF3">
+          <div class="FotoDivBilder">
+            <div class="Bild1"><Image src={HtmlBild} alt="Bild" width="150"/></div> 
+            <div class="Bild2"><Image src={CssBild} alt="Bild" width="150"/></div> 
+            <div class="Bild3"><Image src={AstroBild} alt="Bild" width="150"/></div>
+            <div class="Bild4"><Image src={GimpBild} alt="Bild" width="150"class="BildAbstandF3"/></div> 
+            <div class="Bild5"><Image src={GitBild} alt="Bild" width="150"/></div>
+            <div class="Bild6"><Image src={IcBild} alt="Bild" width="200" class="BildAbstandF3"/></div> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <ButtonRight url='/f4'/>
+  </div>
+</MainLayout>
+
+<style>
+
+body {
+  background-image: url(../Image/folie2.png);
+}
+
+</style>

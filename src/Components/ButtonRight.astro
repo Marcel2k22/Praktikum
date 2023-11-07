@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import Right from '../Image/right5.png';
+
+interface Props {
+  url: string; 
+}
+
+const { url } = Astro.props;
+---
+
+<div class="ButtonFeldRight">
+  <div class="ButtonRight">
+      <div class="ButtonText">
+        <a href={url}><Image src={Right} alt="bild" /> 
+        </a>
+      </div>
+  </div>
+</div>
+
+<style>
+
+.ButtonFeldRight{
+		width: 150px;
+		display: flex;
+		justify-content: center;
+	}
+.ButtonRight{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    margin-top: 470px;
+    border-radius: 5px;
+  }
+
+  .ButtonRight:hover {
+  background: linear-gradient(to left bottom,turquoise , lightblue, white) ;
+  font-weight: bold;
+}
+
+</style>

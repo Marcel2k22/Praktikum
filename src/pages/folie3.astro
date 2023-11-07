@@ -1,0 +1,262 @@
+---
+import MainLayout from "../MainLayout/MainLayout.astro";
+import GitBild from '../Image/git.svg';
+import HtmlBild from '../Image/html.svg';
+import CssBild from '../Image/css.svg';
+import GimpBild from '../Image/gimp.svg';
+import IcBild from '../Image/InternetComputer.svg';
+import AstroBild from '../Image/astro.svg';
+import { Image } from "astro:assets";
+import Left from '../Image/left1.png';
+import Right from '../Image/right5.png';
+---
+
+<MainLayout title="Folie3">
+  <div class="MainDiv">
+
+    <div class="ButtonFeldLeft">
+      <div class="ButtonLeft">
+        <div class="ButtonText">
+          <a href="/f2"> <Image src={Left} alt="bild" /> </a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="MainText">
+
+      <div class="TextDiv">
+        
+        <div class="HauptText">
+          <div class="Text">
+            <div class="border3"></div>
+
+            <ul><div class="ÜberschriftListe"> HTML / CSS </div>
+              <ul>
+                <li>
+                    Grundlagen
+                </li>
+              </ul>
+            </ul>
+            
+            <ul><div class="ÜberschriftListe"> Astro </div>
+              <ul>
+                <div class="Liste">
+                  <li>
+                    Statischer Seiten Generator
+                  </li>
+                  <div class="Platzhalter1">
+                  </div>
+                  <li>
+                    Framework
+                  </li>
+                </div>
+              </ul>
+            </ul>
+
+      
+            <ul><div class="ÜberschriftListe"> Gimp </div>
+              <ul>
+                <div class="Liste">
+                  <li>
+                      Struktur
+                  </li>
+                  <div class="Platzhalter3"></div>
+                  <li>
+                    Bild Bearbeitung
+                  </li>
+                </div>
+              </ul>
+            </ul>
+
+            <ul><div class="ÜberschriftListe"> Git </div>
+              <ul>
+                <div class="Liste">
+                <li>
+                    Versionkontrollsystem
+                </li>
+                <div class="Platzhalter2"></div>
+                <li>
+                  Open Source
+                </li>
+              </div>
+              </ul>
+            </ul>
+
+            <ul><div class="ÜberschriftListe"> Internet Computer </div>
+              <ul>
+                <div class="Liste">
+                  <li>
+                    Hosting
+                  </li>
+                  <div class="Platzhalter5"></div>
+                  <li>
+                    DApp
+                  </li>
+                </div>
+              </ul>
+            </ul>
+            <div class="border4"></div>
+          </div>
+          </div>
+
+
+      </div>
+
+      <div class="FotoDiv">
+          <div class="FotoDivBilder">
+           <div class="Bild1"> <Image src={HtmlBild} alt="Bild" width="150"/>  </div> 
+           <div class="Bild2"> <Image src={CssBild} alt="Bild" width="150"/>   </div> 
+           <div class="Bild3"> <Image src={AstroBild} alt="Bild" width="150"/> </div>
+           <div class="Bild3"> <Image src={GimpBild} alt="Bild" width="150"/>  </div> 
+           <div class="Bild2"> <Image src={GitBild} alt="Bild" width="150"/>   </div>
+           <div class="Bild1"> <Image src={IcBild} alt="Bild" width="200"/>    </div>
+         </div>
+      </div>
+
+    </div>
+
+    <div class="ButtonFeldRight">
+      <div class="ButtonRight">
+        <div class="ButtonText">
+          <a href="/f4"><Image src={Right} alt="bild" /></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</MainLayout>
+
+
+<style>
+
+/* .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(200) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} */
+
+  .MainDiv{
+    display: flex;
+  }
+
+  .MainText{
+    width: 940px;
+    height: 880px;
+    display: flex;
+    margin-top: ;
+  }
+
+  .TextDiv{
+    width: 520px;
+    margin-top: 250px;
+    height: 430px;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+
+  .FotoDiv{
+    width: 400px;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+
+  .FotoDivBilder{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+  }
+
+  .ButtonFeldLeft{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ButtonFeldRight{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ButtonRight{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white ;
+    margin-top: 420px;
+  }
+
+  .ButtonLeft{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white ;
+    margin-top: 420px;;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+}
+
+  .ButtonRight:hover{
+    background: linear-gradient(to left bottom,turquoise , lightblue, white) ;
+    font-weight: bold;
+}
+
+  .ButtonLeft:hover {
+    background: linear-gradient(to left bottom,turquoise , lightblue, white) ;
+    font-weight: bold;
+}
+.Headline{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+  } 
+
+body{
+     background-image: url(../Image/folie3.png); 
+  }
+
+  .Bild1{
+  margin: 10px;
+}
+
+.Bild2{
+  margin: 10px;
+
+}
+
+.Bild3{
+  margin: 10px;
+
+}
+
+.Bild4{
+  margin: 10px;
+
+}
+
+.Bild5{
+  margin: 10px;
+
+}
+
+.Bild6{
+  margin: 10px;
+
+}
+
+</style>

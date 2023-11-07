@@ -1,0 +1,46 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import Listitem from '../Components/Listitem.astro';
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import ButtonRight from '../Components/ButtonRight.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+<MainLayout title='Inhaltsverzeichnis'>
+  <div class="MainDiv">
+
+    <ButtonLeft url="/" />
+
+    <div class="InhaltsverzeichnisDiv">
+      <div class="HeadlineF1">
+        <div class="f1border1"></div>
+
+        <div class="animation">
+          <h3>{lang.f1.headline}</h3>
+        </div>
+
+        <div class="f1border2"></div>
+      </div>
+
+      <div class="Aufzaehlungen">
+        <Listitem Headline={lang.f1.point1} UnderText={lang.f1.text1} />
+        <Listitem Headline={lang.f1.point2} UnderText={lang.f1.text2} />
+        <Listitem Headline={lang.f1.point3} UnderText=""/>
+        <Listitem Headline={lang.f1.point4} UnderText=""/>
+      </div>
+
+    </div>
+    <ButtonRight url="/f2" />
+  </div>
+</MainLayout>
+
+<style>
+
+body {
+  background-image: url(../Image/inhaltsverzeichnis.png);
+}
+
+</style>

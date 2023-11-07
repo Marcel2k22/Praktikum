@@ -1,0 +1,53 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import Headline from '../Components/Headline.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+<MainLayout title=FAQ>
+
+  <div class="MainDiv">
+
+    <div class="InhaltsverzeichnisDiv">
+
+        <!-- <div class="HeadlineF6">
+            <div class="F6border1"></div>
+
+            <div class="animation">
+              <h3>{lang.f6.headline}</h3>
+            </div>
+
+            <div class="F6border2"></div>
+        </div> -->
+
+        <Headline class1="HeadlineF6" class2="F6border1" class3="animation" 
+          Titel={lang.f7.headline} class4="F6border2"/>
+
+        <div class="TextDivF6">
+          <div class="InhaltTextDivF6">
+            <div class="F6border3"></div>
+            <div>{lang.f7.header1}</div>
+          </div>
+
+          <div class="UnterTextF6">
+            <div>{lang.f7.header2}</div>
+            <div class="F6border4"></div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+</MainLayout>
+
+<style>
+
+  body{
+    background-image: url(../Image/inhaltsverzeichnis.png);
+    color: white;
+  }
+
+</style>

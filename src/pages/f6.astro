@@ -1,0 +1,79 @@
+---
+import MainLayout from "../MainLayout/MainLayout.astro";
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import Headline from "../Components/Headline.astro";
+
+import { findCurrentLang } from '../Helper/helper.ts';
+import ButtonRight from "../Components/ButtonRight.astro";
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+<MainLayout title={lang.f6.headline}>
+
+  <div class="MainDiv">
+    <ButtonLeft url="/f5" />
+
+    <div class="MainText">
+
+      <Headline class1="HeadlineF5" class2="F5border1" class3="typed" 
+        Titel={lang.f6.headline} class4="F5border2"/>
+
+      <div class="TextDivNeuF6">
+        <div class="HeadlineF6">
+          <div class="HeadlineTextF6">
+             Ein Beispiel für einen Vorteil von Astro!
+          </div>
+        </div>
+        <div class="TextUseCaseF6">
+          <div class="InhaltUseCaseF6">
+            <div>Hier habe ich ein Beispiel erstellt mit dem ich Mehrsprachigkeit auf meiner Webseite hinzufügen kann.</div>
+            <div>Um dies zu nutzen muss man in meinem Fall nur die json Datein umschreiben.</div>
+          </div>
+        </div>
+        <div class="TextNeuF6">
+          <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/Z7jqz117CyU?si=G3vU6uKfSuP9QMKG" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+    
+    <ButtonRight url="/f7" />
+  </div>
+
+</MainLayout>
+
+<style>
+
+  .HeadlineTextF6{
+    font-size: 30px;
+    font-weight:bold ;
+  }
+
+  .HeadlineF6{
+    margin-top: 100px;
+  }
+
+  .TextUseCaseF6{
+    margin-top: 50px;
+    margin-left: 35px;
+  }
+
+  .InhaltUseCaseF6{
+    font-size: 25px;
+  }
+
+
+
+
+
+body{
+   background-image: url(../Image/folie5.png); 
+}
+        
+</style>

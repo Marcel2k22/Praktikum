@@ -1,0 +1,209 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../MainLayout/MainLayout.astro';
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import Left from '../Image/left1.png'
+import Right from '../Image/right5.png';
+import ButtonRight from '../Components/ButtonRight.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+		<MainLayout title='Inhaltsverzeichnis'>
+
+<div class="MainDiv">
+
+    <!-- <div class="ButtonFeldLeft">
+        <div class="ButtonLeft">
+            <div class="ButtonText">
+                <a href="/"><Image src={Left} alt="bild" /> 
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+  <ButtonLeft url={Left} />
+
+    <div class="InhaltsverzeichnisDiv">
+
+        <div class="Headline">
+            <div class="border1"></div>
+
+            <div class="animation">
+              <h3>{lang.f1.headline}</h3>
+            </div>
+
+            <div class="border2"></div>
+        </div>
+
+<div class="Aufzählungen">
+
+    <ul> 
+      <li>
+        Unternehmen
+      </li>
+    </ul>
+
+
+
+</div>
+
+</div>
+
+     <div class="ButtonFeldRight">
+        <div class="ButtonRight">
+            <div class="ButtonText">
+                <a href="/f2"><Image src={Right} alt="bild" /></a>
+            </div>
+        </div>
+    </div> 
+
+  
+
+</div>
+		</MainLayout>
+
+
+<style>
+
+
+  .Punkt1{
+    font-size: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .ButtonFeldRight{
+		width: 150px;
+		display: flex;
+		justify-content: center;
+	}
+  .ButtonRight{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid white;
+    margin-top: 470px;
+    border-radius: 5px;
+  }
+
+  .ButtonRight:hover {
+  background: linear-gradient(to left bottom,turquoise , lightblue, white) ;
+  font-weight: bold;
+}
+
+    /* .Aufzählungen{
+        margin-top: 150px;
+    }
+
+    .Aufzählung1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AufzahlunsPunkt1{
+        margin-top: 35px;
+        font-size: 25px;
+    }
+
+    .AufzählunsPunkt2{
+        font-size: 25px;
+    }
+
+    .ÜberPunkt{
+        font-size: 40px;
+        margin-left: 5px;
+    } */
+
+.Headline{
+  margin-left: 35px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.animation{
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: nowrap;
+  animation: 
+    typing 4s steps(200, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.border1{
+  border-top: 2px solid white;
+    width: 30%;
+}
+
+.border2{
+  border-top: 2px solid white;
+    width: 55%;
+}
+
+  /* ul{
+    padding-bottom: 20px;
+  }  
+  
+  ul li {
+  list-style: none;
+  position: relative;
+  padding: 2px 2px 2px 25px;
+}
+
+ ul li::before {
+  content: url(../Image/arrow.png);
+  position: absolute;
+  top: 10px;
+  left: 0;
+}  */
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+	.MainDiv{
+		height: 99%;
+		width: 99%;
+		display: flex;
+	}
+
+  .InhaltsverzeichnisDiv{
+    width: 100%;
+    height: 100%;
+  }
+
+  .TextDiv{
+    display: flex;
+    flex-direction: row;
+  }
+
+ h3 {
+    font-family: 'Bungee';
+  } 
+
+  body{
+    background-image: url(../Image/inhaltsverzeichnis.png);
+    color: white;
+  }
+
+</style>

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "lang":"en"
+  },
+  "content":{
+    "f0": {
+      "headline" : "Steiner Marcel | Klagenfurt",
+      "header" : "10-week company internship" ,
+      "header2" : "Samlinux Development"
+    },
+    "f1":{
+      "headline" : "overview",
+      "point1" : "Company",
+      "text1" : "sdg - samlinux development group, Klagenfurt",
+      "point2" : "Content of the internship",
+      "text2" : "Web development, Internet computing, version control",
+      "point3" : "Understanding of the internship",
+      "point4" : "FAQ"
+    },
+    "f2" : {
+      "headline" : "Company",
+      "text1" : "sdg - samlinux development group ",
+      "text2" : "Feschnigstraße 217 H",
+      "text3" : "9020 Klagenfurt am Wörthersee",
+      "point1" : "What does the company do?",
+      "text4" : "Offers cloud & blockchain technology for companies",
+      "point2" : "How did I come across the company?",
+      "text5" : "Through the family",
+      "point3" : "Internship period",
+      "text6" : "11.09.2023 - 17.11.2023"
+    },
+    "f3" : {
+      "headline" : "Content of the internship 1/2",
+      "point1" : "HTML / CSS",
+      "text1" : "Basics",
+      "point2" : "Astro",
+      "text2" : "Static website generator",
+      "point3" : "Gimp",
+      "text3" : "Image editing",
+      "text4" : "overview",
+      "point4" : "Git",
+      "text5" : "Version control system",
+      "text6" : "Open Source",
+      "point5" : "Internet Computer",
+      "text7" : "Hosting ",
+      "text8" : "DApps"
+    },
+    "f4" : {
+      "headline" : "Content of the internship 2/2",
+      "point1" : "1. Worked with Astro",
+      "text1" : "created websites",
+      "point2" : "2. Tested new online course",
+      "text2" : "Master Deployment of Static Websites on the IC",
+      "point3" : "3. Worked with Git",
+      "text3" : "created Repository and Branches ",
+      "point4" : "4. Worked in customer support",
+      "text4" : "Support tickets processed",
+      "point5" : "5. Worked with Internet Computer (IC)",
+      "text5" : "Canister created and website hosted via IC"
+    },
+    "f5" : {
+      "headline" : "Findings from the internship",
+      "point1" : "How did I feel??",
+      "text1" : "fared well",
+      "text2" : "easy access",
+      "text3" : "nice enviroment",
+      "text4" : "possible tasks",
+      "text5" : "a lot of help",
+      "point2" : "What did i lern?",
+      "text6" : "professional life",
+      "text7" : "Career insight",
+      "text8" : "learning intensive",
+      "text9" : "Difference work | School",
+      "text10" : "different than imagined"
+    },
+    "f7" : {
+      "headline" : "FAQ",
+      "header1" : "Thank you very much for your attention!",
+      "header2" : "If you have any questions, feel free to ask"
+    }
+  }
+}

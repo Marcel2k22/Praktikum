@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import Left from '../Image/left1.png';
+
+interface Props {
+  url: string; 
+}
+
+const { url } = Astro.props;
+---
+
+<div class="ButtonFeldLeft">
+  <div class="ButtonLeft">
+      <div class="ButtonText">
+        <a href={url}>
+          <Image src={Left} alt="bild" /> 
+        </a>
+      </div>
+  </div>
+</div>
+
+<style>
+
+.ButtonFeldLeft {
+  width: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+.ButtonLeft {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid white;
+  margin-top: 470px;
+  border-radius: 5px;
+}
+
+.ButtonLeft:hover {
+  background: linear-gradient(to left bottom,turquoise , lightblue, white) ;  
+  font-weight: bold;
+}
+
+</style>

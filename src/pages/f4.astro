@@ -1,0 +1,84 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import { Image } from "astro:assets";
+import ICAstro from '../Image/ICAstro.png';
+import GitBild from '../Image/GitBild3.png';
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import Headline from '../Components/Headline.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+import ButtonRight from '../Components/ButtonRight.astro';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---  
+
+<MainLayout title="Inhalt des Praktikums 2/2">
+  <div class="MainDiv">
+
+    <ButtonLeft url="/f3" />
+       <div class="MainText">
+          <Headline class1="HeadlineF4" class2="F4border1" class3="typed" 
+            class4="F4border2" Titel={lang.f4.headline}/>
+
+          <div class="TextDiv">
+            <div class="HauptText">
+              <div class="TextF4">
+                <div class="F4border3"></div>
+
+                  <div class="ListeInhalt">
+                    <div class="AbstandListeF3">
+                      <div class="TitleF4">{lang.f4.point1}</div>
+                      <div class="InhaltListeF4">{lang.f4.text1}</div>
+                    </div>
+                    <div class="AbstandListeF3">
+                      <div class="TitleF4">{lang.f4.point2}</div>
+                      <div class="InhaltListeF4">{lang.f4.text2}</div>
+                    </div>
+                    <div class="AbstandListeF3">
+                      <div class="TitleF4">{lang.f4.point3}</div>
+                      <div class="InhaltListeF4">{lang.f4.text3}</div>
+                    </div>
+                    <div class="AbstandListeF3">
+                      <div class="TitleF4">{lang.f4.point4}</div>
+                      <div class="InhaltListeF4">{lang.f4.text4}</div>
+                    </div>
+                    <div class="AbstandListeF3">
+                      <div class="TitleF4">{lang.f4.point5}</div>
+                      <div class="InhaltListeF4">{lang.f4.text5}</div>
+                    </div>
+                  </div>
+
+                <div class="F4border4"></div>
+              </div>
+            </div>
+
+              <div class="FotoDivF4">
+                  <a href="javascript:OpenWindow('/GitBild2.png')" >
+                      <Image src={GitBild} alt="bild" width="400" height="350" title="Bild lädt"/>
+                  </a> 
+                  <a href="javascript:OpenWindow('/ICAstro.png')" >
+                    <Image src={ICAstro} alt="bild" width="400" height="350" title="Bild lädt"/>
+                  </a>
+              </div>
+
+          </div>
+       </div>
+      <ButtonRight url="/f5"/>
+
+		</MainLayout>
+
+<style>
+
+body{
+ background-image: url(../Image/folie4.png); 
+}
+
+</style>
+
+<script is:inline>
+
+function OpenWindow(url) {
+  var myWindow = window.open(url, "", "width=911,height=500");
+}
+
+</script>

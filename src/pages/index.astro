@@ -1,0 +1,115 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import { Image } from 'astro:assets';
+import Right from '../Image/right5.png';
+import { findCurrentLang } from '../Helper/helper.ts';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+
+---
+
+		<MainLayout title='Index'>
+
+			<div class="MainDivIndex">
+
+				<div class="ButtonFeldLeftIndex">
+					<div class="ButtonLeftIndex">
+						<div class="ButtonTextIndex">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="MainTextIndex">
+
+					<div>
+						{lang.f0.headline}
+					</div>
+					
+					<div class="HauptTextIndex">
+						<div class="Indexborder1">
+						</div>
+						<div class="TextIndex">
+							{lang.f0.header}
+						</div>
+
+						<div class="UnterTextIndex">
+							<div>
+								{lang.f0.header2}
+							</div>
+							<div class="Indexborder2">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="ButtonFeldRight">
+					<div class="ButtonRight">
+						<div class="ButtonText">
+							<a href="/f1"> <Image src={Right} alt="bild" /></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</MainLayout>
+
+		
+
+<style>
+
+	.MainDivIndex{
+		height: 100%;
+		width: 100%;
+		display: flex;
+	}
+	.MainTextIndex{
+		width: 980px;
+		padding-left: 20px;		
+	}
+
+	.HauptTextIndex{
+		position: relative;
+		display: flex;
+		flex-direction:column ;
+		text-align: center;
+		top: 45.5%;
+		font-size: 35px;
+	}
+
+	.UnterTextIndex{
+		margin-top: 10px;
+		font-size: 35px;
+	}
+
+
+	.TextIndex{
+		display: flex;
+		flex-direction: column;
+		padding-top: 10px;
+	}
+
+	body{
+  background-image: url(../Image/Hintergrund4.png); 
+  color: white;
+}
+
+
+	.Indexborder1{
+		border-top: 2px solid white;
+		width: 510px;
+		margin-left: 230px;
+	}
+
+	.Indexborder2{
+		border-bottom: 2px solid white;
+		width: 510px;
+		margin-left: 230px;
+	}
+
+	/* body {
+		background-image: url(../Image/hintergrung.png);
+	} */
+
+</style>

@@ -1,0 +1,75 @@
+---
+import MainLayout from '../MainLayout/MainLayout.astro';
+import { Image } from 'astro:assets';
+import Arbeitsplatz from '../Image/Arbeitsplatzbild.png';
+import SamlinuxLogo from '../Image/SamlinuxLogo.png';
+import ButtonLeft from '../Components/ButtonLeft.astro';
+import Headline from '../Components/Headline.astro';
+
+import { findCurrentLang } from '../Helper/helper.ts';
+import ButtonRight from '../Components/ButtonRight.astro';
+const languages = await Astro.glob('../I18/*.json');
+const lang = findCurrentLang(languages);
+---
+
+<MainLayout title='Mein Betriebspraktikum'>
+
+  <div class="MainDiv2">
+    <ButtonLeft url="/f1" />
+      <div class="MainText">
+
+        <Headline class1="HeadlineF2" class2="F2border1" class3="typed" 
+          class4="F2border2" Titel={lang.f2.headline} />
+
+      <div class="TextDiv">
+        <div class="HauptText">
+          <div class="Text">
+            <div class="F2border3"></div>
+              <div class="FirmenStandort">
+                  <div class="AdresseUnternehmen">
+                    <a target="_blank" href="https://samlinux.at/index.html">{lang.f2.text1}</a>
+                  </div>
+                    <div class="AdresseUnternehmen">{lang.f2.text2}</div>
+                    <div class="AdresseUnternehmen">{lang.f2.text3}</div>   
+              </div>
+              <div class="F2border4"></div>
+
+            <div class="AllePunkte">
+              <div class="F2Abstand">
+                <div class="UberPunkt">{lang.f2.point1}</div>
+                <div class="Point1">{lang.f2.text4}</div>
+              </div> 
+
+              <div class="F2Abstand">
+                <div class="UberPunkt">{lang.f2.point2}</div>
+                <div class="Point1">{lang.f2.text5}</div>
+              </div>
+
+              <div class="F2Abstand">
+                <div class="UberPunkt">{lang.f2.point3}</div>
+                <div class="Point1">{lang.f2.text6}</div>
+              </div>
+            </div>
+            <div class="F2border4"></div>
+
+          </div>
+        </div>
+
+        <div class="FotoDivF2">  
+          <Image src={SamlinuxLogo} alt="Bild nocht geladen"  class="BildAbstand"/> 
+          <Image src={Arbeitsplatz} alt="Bild" width="400" height="350"/> 
+        </div>
+      </div>
+
+      </div>
+        <ButtonRight url="/f3" />
+    </div>
+</MainLayout>
+
+<style>
+
+body {
+  background-image: url(../Image/folie2.png);
+}
+
+</style>

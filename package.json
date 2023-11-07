@@ -1,0 +1,17 @@
+{
+  "name": "presantationsite",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/bungee": "^5.0.15",
+    "@fontsource/monoton": "^5.0.15",
+    "astro": "^3.3.1"
+  }
+}
