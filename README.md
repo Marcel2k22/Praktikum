@@ -1,9 +1,19 @@
+Projekt für das Betriebspraktikum
+
+In diesem Repository seht ihr mein Projekt.
+Dieses Projekt ist eine Präsentation meines Betribespraktikums.
+Diese Seite ist so aufgebaut wie eine Powerpoint Präsentation.
+
+Um auf die Gehostete Seite zu kommen bebötigt man diesen Link:
+(Link IC Adresse einfügen)
+
+
+
 TODO:
 
 Bericht
- - Digitale Version           X        
- - Handschriftlich ausfüllen
- - Unterschreiben lassen
+ - Digitale Version             X        
+ - Unterschreiben lassen        
 
 Präsentation
  - CSS und HTML refactoring X - OK
@@ -11,8 +21,7 @@ Präsentation
  - Präsentation Kontrolle Inhalt mit Iris
  
 Deployment
- - Github Repository erstellen, ReadMe Datei anpassen und als Präsentations start vorbereiten
- - Video für Use Case (youtube ungelistetst video)
+ - Github Repository erstellen, ReadMe Datei anpassen und alsPräsentations start vorbereiten
  - Die Seite auf den Internet Computer zu bringen
  
 
