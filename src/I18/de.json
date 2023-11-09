@@ -5,8 +5,8 @@
   "content":{
     "f0": {
       "headline" : "Steiner Marcel | Klagenfurt",
-      "header" : "10 wöchiges Betriebspraktikum" ,
-      "header2" : "Samlinux Development"
+      "header" : "10-wöchiges Betriebspraktikum" ,
+      "header2" : "Samlinux Development Group"
     },
     "f1":{
       "headline" : "Überblick",
@@ -14,16 +14,17 @@
       "text1" : "sdg - samlinux development group, Klagenfurt",
       "point2" : "Inhalt des Praktikums",
       "text2" : "Webentwicklung, Internet Computer, Versionskontrolle",
-      "point3" : "Erkenntnis des Praktikums",
-      "point4" : "FAQ"
+      "point3" : "Erfahrungen aus dem Praktikum",
+      "point4" : "Q&A"
     },
     "f2" : {
       "headline" : "Unternehmen",
+      "text0" : "Bole Roland, Bakk. MSc",
       "text1" : "sdg - samlinux development group ",
-      "text2" : "Feschnigstraße 217 H",
+      "text2" : "Feschnigstraße 217H",
       "text3" : "9020 Klagenfurt am Wörthersee",
       "point1" : "Was macht das Unternehmen?",
-      "text4" : "Bietet Cloud & Blockchaintechnologie für Unternehmen an",
+      "text4" : "Cloud & Blockchain-Technologie für Unternehmen",
       "point2" : "Wie bin ich auf das Unternehmen gekommen?",
       "text5" : "Durch die Familie",
       "point3" : "Praktikumszeit",
@@ -36,51 +37,53 @@
       "point2" : "Astro",
       "text2" : "Statischer Webseiten Generator",
       "point3" : "Gimp",
-      "text3" : "Bild Bearbeitung",
-      "text4" : "Überblick",
+      "text3" : "Bild-Bearbeitung",
+      "text4" : "Einführung",
       "point4" : "Git",
       "text5" : "Versionskontrollsystem",
       "text6" : "Open Source",
       "point5" : "Internet Computer",
-      "text7" : "Hosting ",
-      "text8" : "DApps"
+      "text7" : "Web 3.0 ",
+      "text8" : "Hosting"
     },
     "f4" : {
       "headline" : "Inhalt des Praktikums 2/2",
-      "point1" : "1. Mit Astro gearbeitet",
+      "point1" : "1. Astro ",
       "text1" : "Webseiten erstellt",
-      "point2" : "2. Neuen Online Kurs getestet",
-      "text2" : "Master Deployment of Static Websites on the IC",
-      "point3" : "3. Mit Git gearbeitet",
+      "point2" : "2. Beta Testing",
+      "text2" : "Einen online Kurs final getestet",
+      "point3" : "3. Git",
       "text3" : "Repository und Branches erstellt",
-      "point4" : "4. Im Kundensupport gearbeitet",
-      "text4" : "Supporttickets bearbeitet",
-      "point5" : "5. Mit Internet Computer (IC) gearbeitet",
+      "point4" : "4. Projektmanagement",
+      "text4" : "Mein Projekt geplant",
+      "point5" : "5. Internet Computer (IC)",
       "text5" : "Canister erstellt und Webseite über IC gehostet"
     },
     "f5" : {
-      "headline" : "Erkenntnisse des Praktikums",
-      "point1" : "Wie ist es mit ergangen?",
-      "text1" : "gut ergangen",
-      "text2" : "leichte Anfahrt",
-      "text3" : "nettes Umfeld",
-      "text4" : "mögliche Aufgaben",
-      "text5" : "viel Hilfe",
-      "point2" : "Was habe ich mitgenommen?",
-      "text6" : "Berufsleben",
-      "text7" : "Berufseinblick",
-      "text8" : "lernintensiv",
-      "text9" : "Unterschied Arbeit | Schule",
-      "text10" : "different than imagined"
+      "headline" : "Erfahrungen aus dem Praktikum",
+      "point1" : "Wie ist es mir ergangen?",
+      "text1" : " - gut ergangen",
+      "text2" : " - leichte Anfahrt",
+      "text3" : " - nettes Umfeld",
+      "text4" : " - lösbare Aufgaben",
+      "text5" : " - viel Hilfe",
+      "point2" : "Was nehme ich mit?",
+      "text6" : " - Einblick ins Berufsleben",
+      "text8" : " - lernintensiver Beruf",
+      "text9" : " - Unterschied Arbeit | Schule",
+      "text10" : " - selbständiges Arbeiten"
+      
     },
-
     "f6" : {
-      "headline" : "UseCase"
+      "headline" : "Use Case",
+      "headline2" : "Mehrsprachigkeit",
+      "text1" : "Durch die Trennung von Layout, Design und Content ist es möglich, den Inhalt einer Webseite einfach zu warten, zum Beispiel für die Mehrsprachigkeit.",
+      "text2" : "Dies erfolgt durch Einsetzen von Environment-Variablen."
     } ,
     "f7" : {
-      "headline" : "FAQ",
+      "headline" : "Q&A",
       "header1" : "Vielen dank für eure Aufmerksamkeit!",
-      "header2" : "Falls ihr Fragen habt, könnt ihr diese gerne stellen"
+      "header2" : "Falls ihr Fragen habt, könnt ihr diese jetzt gerne stellen."
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "canisters": {
+      "MyPortfolioSite": {
+          "type": "assets",
+          "source": ["dist/"]
+      }
+  }
+}

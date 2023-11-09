@@ -5,29 +5,30 @@
   "content":{
     "f0": {
       "headline" : "Steiner Marcel | Klagenfurt",
-      "header" : "10-week company internship" ,
-      "header2" : "Samlinux Development"
+      "header" : "10-weeks company internship" ,
+      "header2" : "Samlinux Development Group"
     },
     "f1":{
       "headline" : "overview",
       "point1" : "Company",
       "text1" : "sdg - samlinux development group, Klagenfurt",
       "point2" : "Content of the internship",
-      "text2" : "Web development, Internet computing, version control",
-      "point3" : "Understanding of the internship",
-      "point4" : "FAQ"
+      "text2" : "Web development, Internet Computer, version control system",
+      "point3" : "Experiences of the internship",
+      "point4" : "Q&A"
     },
     "f2" : {
       "headline" : "Company",
+      "text0" : "Bole Roland, Bakk. MSc",
       "text1" : "sdg - samlinux development group ",
-      "text2" : "Feschnigstraße 217 H",
+      "text2" : "Feschnigstraße 217H",
       "text3" : "9020 Klagenfurt am Wörthersee",
       "point1" : "What does the company do?",
-      "text4" : "Offers cloud & blockchain technology for companies",
-      "point2" : "How did I come across the company?",
+      "text4" : " Cloud & blockchain technologies for companies",
+      "point2" : "How did I come to the company?",
       "text5" : "Through the family",
       "point3" : "Internship period",
-      "text6" : "11.09.2023 - 17.11.2023"
+      "text6" : "September 11, 2023 - November 17, 2023 "
     },
     "f3" : {
       "headline" : "Content of the internship 1/2",
@@ -37,46 +38,51 @@
       "text2" : "Static website generator",
       "point3" : "Gimp",
       "text3" : "Image editing",
-      "text4" : "overview",
+      "text4" : "Introduction",
       "point4" : "Git",
       "text5" : "Version control system",
       "text6" : "Open Source",
       "point5" : "Internet Computer",
-      "text7" : "Hosting ",
-      "text8" : "DApps"
+      "text7" : "Web 3.0 ",
+      "text8" : "Hosting"
     },
     "f4" : {
       "headline" : "Content of the internship 2/2",
-      "point1" : "1. Worked with Astro",
+      "point1" : "1. Astro",
       "text1" : "created websites",
-      "point2" : "2. Tested new online course",
-      "text2" : "Master Deployment of Static Websites on the IC",
-      "point3" : "3. Worked with Git",
-      "text3" : "created Repository and Branches ",
-      "point4" : "4. Worked in customer support",
-      "text4" : "Support tickets processed",
-      "point5" : "5. Worked with Internet Computer (IC)",
-      "text5" : "Canister created and website hosted via IC"
+      "point2" : "2. Beta testing",
+      "text2" : "final tested of an online course",
+      "point3" : "3. Git",
+      "text3" : "created repositories and branches ",
+      "point4" : "4. Project management",
+      "text4" : "planned my project",
+      "point5" : "5. Internet Computer (IC)",
+      "text5" : "canister created and website hosted via IC"
     },
     "f5" : {
-      "headline" : "Findings from the internship",
-      "point1" : "How did I feel??",
-      "text1" : "fared well",
-      "text2" : "easy access",
-      "text3" : "nice enviroment",
-      "text4" : "possible tasks",
-      "text5" : "a lot of help",
-      "point2" : "What did i lern?",
-      "text6" : "professional life",
-      "text7" : "Career insight",
-      "text8" : "learning intensive",
-      "text9" : "Difference work | School",
-      "text10" : "different than imagined"
+      "headline" : "Experiences of the internship",
+      "point1" : "How did I feel to work?",
+      "text1" : " - felt well",
+      "text2" : " - easy transport connection",
+      "text3" : " - nice enviroment",
+      "text4" : " - solvable tasks",
+      "text5" : " - a lot of help",
+      "point2" : "What do I take with me?",
+      "text6" : " - Career insights",
+      "text8" : " - intensive learning ",
+      "text9" : " - difference work | school",
+      "text10" : " - different than I imagined"
     },
+    "f6" : {
+      "headline" : "Use Case",
+      "headline2" : "Multilingualism",
+      "text1" : "By separating layout, design and content, it is possible to easily maintain the content of a website, for example for multilingualism.",
+      "text2" : "This is can be done by using environment variables."
+    } ,
     "f7" : {
-      "headline" : "FAQ",
+      "headline" : "Q&A",
       "header1" : "Thank you very much for your attention!",
-      "header2" : "If you have any questions, feel free to ask"
+      "header2" : "If you have any questions, feel free to ask."
     }
   }
 }

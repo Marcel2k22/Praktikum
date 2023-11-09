@@ -22,21 +22,20 @@ const lang = findCurrentLang(languages);
       <div class="TextDivNeuF6">
         <div class="HeadlineF6">
           <div class="HeadlineTextF6">
-             Ein Beispiel für einen Vorteil von Astro!
+             {lang.f6.headline2}
           </div>
         </div>
         <div class="TextUseCaseF6">
           <div class="InhaltUseCaseF6">
-            <div>Hier habe ich ein Beispiel erstellt mit dem ich Mehrsprachigkeit auf meiner Webseite hinzufügen kann.</div>
-            <div>Um dies zu nutzen muss man in meinem Fall nur die json Datein umschreiben.</div>
+            <div>{lang.f6.text1}</div>
+            <div>{lang.f6.text2}</div>
           </div>
         </div>
         <div class="TextNeuF6">
-          <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/Z7jqz117CyU?si=G3vU6uKfSuP9QMKG" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KtFF5T8AyB4?si=Q7qN6Og5fME74gz4" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+            web-share" allowfullscreen>
           </iframe>
         </div>
       </div>
@@ -49,28 +48,6 @@ const lang = findCurrentLang(languages);
 </MainLayout>
 
 <style>
-
-  .HeadlineTextF6{
-    font-size: 30px;
-    font-weight:bold ;
-  }
-
-  .HeadlineF6{
-    margin-top: 100px;
-  }
-
-  .TextUseCaseF6{
-    margin-top: 50px;
-    margin-left: 35px;
-  }
-
-  .InhaltUseCaseF6{
-    font-size: 25px;
-  }
-
-
-
-
 
 body{
    background-image: url(../Image/folie5.png); 

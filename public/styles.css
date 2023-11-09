@@ -4,7 +4,7 @@
 /* Folie 1*/
 
 .Aufzaehlungen{
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .Aufzaehlungen ul{
@@ -225,7 +225,7 @@ a:hover {
 
 
 /* Animation */
-.animation{
+/*.animation{
   overflow: hidden;
   word-wrap: break-word;
   white-space: nowrap;
@@ -266,10 +266,11 @@ a:hover {
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
+} */
 
 /* Animation */
 
+/* GitHub ghp_DOig1p9jraBx0B50oADgZGUYYGJKxc2roskl */
 
 /*  LAYOUT DIVS */
 .TextDiv{
@@ -281,6 +282,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   margin-top: 120px;
+  text-align: left;
 }
 
 .TextDivF6{
@@ -339,7 +341,7 @@ a:hover {
 }
 
 .HauptText{
-  margin-top: 45px;
+  margin-top: 10px;
   width: 570px;
   height: 800px;
   font-size: 25px;
@@ -351,6 +353,7 @@ a:hover {
 /* Überschriften */
 h3 {
   font-family: 'Bungee';
+  font-size: 35px;
 } 
 
 .HeadlineF1{
@@ -393,10 +396,6 @@ h3 {
 /* Überschriften */
 
 
-
-
-
-
 /* Folie 2 */
 
 .FirmenStandort{
@@ -415,7 +414,6 @@ margin-left: 50px;
 .AllePunkte{
   margin-left: 40px;
   padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .Point1{
@@ -434,6 +432,19 @@ margin-left: 50px;
 
 .AdresseUnternehmen{
   font-size: 27px;
+}
+
+.Abstand{
+  margin-bottom: 15px;
+  font-size: 27px;
+}
+
+.AbstandNeuF2{
+  margin-bottom: 10px;
+}
+
+.AbstandF2Text0{
+  margin-top: 10px;
 }
 
 /* Folie 2 */
@@ -508,7 +519,7 @@ margin-left: 50px;
 }
 
 .InhaltListeF4{
-margin-left: 20px;
+margin-left: 30px;
 font-size: 23px;
 }
 
@@ -526,6 +537,38 @@ font-size: 23px;
 
 
 /* Folie5 */
+
+.CompleteDiv{
+  width: 920px;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.FormatierungPunkt1{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.UnterPunkteFormatierung{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.UnterPunkteFormatierung2{
+  font-size: 30px;
+  padding: 10px;
+}
+
+.DivSpaltung2{
+  margin-left: 60px;
+}
+
+
+
+
+
 .Text1{
   margin-top: 50px;
   width: 490px;
@@ -574,10 +617,76 @@ h4{
   text-align: center;
 }
 
+
+.HeadlineTextF6{
+  font-size: 30px;
+  font-weight:bold ;
+}
+
+.HeadlineF6{
+  margin-top: 100px;
+}
+
+.TextUseCaseF6{
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.InhaltUseCaseF6{
+  font-size: 27px;
+}
+
+
+
 /* Folie 7*/
 .UnterTextF6{
   text-align: center;
   font-family: 'Bungee';
   font-size: 25px;
+  margin-top: 10px;
+}
+
+
+/* Index Seite */
+
+.MainDivIndex{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.MainTextIndex{
+  width: 980px;
+  padding-left: 20px;		
+}
+
+.HauptTextIndex{
+  position: relative;
+  display: flex;
+  flex-direction:column ;
+  text-align: center;
+  top: 45.5%;
+  font-size: 35px;
+}
+
+.UnterTextIndex{
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+.TextIndex{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.Indexborder1{
+  border-top: 4px solid white;
+  width: 540px;
+  margin-left: 215px;
+}
+
+.Indexborder2{
+  border-bottom: 4px solid white;
+  width: 540px;
+  margin-left: 215px;
   margin-top: 10px;
 }
